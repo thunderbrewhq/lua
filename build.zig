@@ -63,5 +63,7 @@ pub fn build(b: *std.Build) void {
     .flags = &lua_compiler_flags
   });
 
+  lua.installHeadersDirectory(b.path("src"), ".", .{ .include_extensions = &.{ "h" } });
+
   b.installArtifact(lua);
 }
