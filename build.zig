@@ -44,7 +44,6 @@ pub fn build(b: *std.Build) void {
     "src/ltable.c",
     "src/ltablib.c",
     "src/ltm.c",
-    "src/lua.c",
     "src/luac.c",
     "src/lundump.c",
     "src/lvm.c",
